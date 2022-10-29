@@ -668,6 +668,7 @@ address {
 
 .modal {
   position: absolute;
+  text-align: start;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
@@ -756,4 +757,15 @@ address {
 
 .form-field input::placeholder {
   display: block;
+}
+
+.feedback {
+  display: block;
+  padding: 75px 40px 164px 40px;
+  align-items: center;
+}
+
+.feedback-field {
+  display: flex;
+  flex-direction: column;
 }
