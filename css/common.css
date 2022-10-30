@@ -798,9 +798,12 @@ address {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
+  appearance: auto;
 }
 
-.feedback-input:focus-within {
+.feedback-input:hover,
+.feedback-input:focus {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 
