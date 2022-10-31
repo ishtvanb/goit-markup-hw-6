@@ -476,40 +476,58 @@
       <div class="modal">
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="feedback">
-          <label class="feedback-field" for="name">Ім'я
-            <input class="feedback-input" type="text" name="name" />
+          <label class="feedback-field" for="name"
+            >Ім'я
+            <input class="feedback-input" type="text" name="name" id="name" />
             <svg class="feedback-icon">
               <use href="./images/icons/icons.svg#person-black"></use>
             </svg>
-            </label>
-            <label class="feedback-field" for="tel">Телефон
-            <input class="feedback-input" type="tel" name="tel" />
+          </label>
+          <label class="feedback-field" for="tel"
+            >Телефон
+            <input class="feedback-input" type="tel" name="tel" id="tel" />
             <svg class="feedback-icon">
               <use href="./images/icons/icons.svg#phone-black"></use>
             </svg>
-            </label>
-            <label class="feedback-field" for="mail">Пошта
-            <input class="feedback-input" type="email" name="mail" />
+          </label>
+          <label class="feedback-field" for="mail"
+            >Пошта
+            <input class="feedback-input" type="email" name="mail" id="mail" />
             <svg class="feedback-icon">
               <use href="./images/icons/icons.svg#email-black"></use>
             </svg>
-            </label>
-            <label class="feedback-field" for="feedback">Коментар
-            <textarea class="comment-input" name="comment" placeholder="Введіть текст"/></textarea>
-            </label>
+          </label>
+          <label class="feedback-field" for="feedback"
+            >Коментар
+            <textarea
+              class="comment-input"
+              name="comment"
+              placeholder="Введіть текст"
+              id="feedback"
+            ></textarea>
+          </label>
         </form>
-          <div class="agreement-field">
-            <label for="" class="checkbox-label">Погоджуюся з розсилкою та приймаю<span class="agreement-term">Умови договору</span>
+        <div class="agreement-field">
+          <label for="agreement" class="checkbox-label"
+            >Погоджуюся з розсилкою та приймаю<span class="agreement-term"
+              >Умови договору</span
+            >
             <span class="checkbox-icon">
-              <input class="checkbox" type="checkbox" name="" value="" />
-            <svg class="agreement-icon" width="15" height="15">
-              <use href="./images/icons/icons.svg#white-check"></use>
-            </svg>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="agreement"
+                value=""
+                id="agreement"
+              />
+              <svg class="agreement-icon" width="16" height="15">
+                <use href="./images/icons/icons.svg#white-check"></use>
+              </svg>
             </span>
-            </label>
-          </div>
-          <button class="feedback-button-submit" type="submit">Відправити</button>
-          <button data-modal-close class="close-button" type="button">
+          </label>
+        </div>
+        <button class="feedback-button-submit" type="submit">Відправити</button>
+        <button data-modal-close class="close-button" type="button">
           <svg class="close-icon" width="18" height="18">
             <use href="./images/icons/icons.svg#close-black"></use>
           </svg>

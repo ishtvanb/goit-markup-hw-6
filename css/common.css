@@ -803,6 +803,12 @@ address {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 4px;
+  transition: border 250ms var(--transition-timing-function);
+}
+
+.feedback-input:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .feedback-input:focus-within + .feedback-icon {
@@ -815,6 +821,7 @@ address {
   height: 18px;
   top: 50%;
   margin-left: 12px;
+  transition: fill 250ms var(--transition-timing-function);
 }
 
 .comment-input {
@@ -845,15 +852,16 @@ address {
 
 .checkbox-icon {
   position: absolute;
-  top: -87%;
-  left: 2.5%;
-  width: 15px;
+  top: 12%;
+  left: 2%;
+  width: 16px;
   height: 15px;
 }
 
 .agreement-icon {
   border: 1px solid rgba(33, 33, 33, 1);
   border-radius: 2px;
+  transition: 250ms var(--transition-timing-function);
 }
 
 .checkbox:checked + .agreement-icon {
