@@ -700,11 +700,18 @@ address {
   margin-top: 8px;
   margin-right: 8px;
   background-color: var(--white-color);
+  transition: transform 250ms var(--transition-timing-function);
 }
 
 .close-icon {
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+.close-button:hover,
+.close-button:focus {
+  fill: var(--accent-color);
+  transform: translateX(40%) translateY(40%);
 }
 
 .form {
@@ -798,9 +805,8 @@ address {
   margin-top: 4px;
 }
 
-.feedback-input:hover,
-.feedback-input:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
+.feedback-input:focus-within + .feedback-icon {
+  fill: var(--accent-color);
 }
 
 .feedback-icon {
@@ -837,13 +843,22 @@ address {
   color: var(--accent-color);
 }
 
-.agreement-icon {
+.checkbox-icon {
   position: absolute;
-  width: 16px;
-  height: 14px;
-  top: 16%;
-  left: 5%;
-  background-color: var(--white-color);
+  top: -87%;
+  left: 2.5%;
+  width: 15px;
+  height: 15px;
+}
+
+.agreement-icon {
+  border: 1px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .agreement-icon {
+  background-color: var(--accent-color);
+  border: none;
 }
 
 .feedback-button-submit {
